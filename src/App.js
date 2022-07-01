@@ -1,23 +1,16 @@
-import logo from './logo.svg';
+
 import './App.css';
+import 'tachyons'
+import Inputshortner from './Components/inputshortner';
+import Background from './background/background';
+import Linkresult from './Components/Linkresult';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="tc">
+     <Inputshortner/>
+     <Background/>
+     <Linkresult/>
     </div>
   );
 }
